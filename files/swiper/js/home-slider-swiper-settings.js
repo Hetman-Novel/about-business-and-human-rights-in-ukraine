@@ -33,10 +33,10 @@ if (testimonials_slider) {
          loadOnTransitionStart: false,
 
          // Подгрузить предыдущую и следующую картинку
-         loadPrewNext: true,
+         loadPrewNext: false,
       },
       // Слежка за видимыми слайдами
-      watchSlidesProgress: true,
+      watchSlidesProgress: false,
 
       // Добавление класса видимым слайдам
       watchSlidesVisibility: true,

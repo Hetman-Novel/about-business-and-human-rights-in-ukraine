@@ -1429,19 +1429,6 @@ body._touch .header .menu__list > li._active .menu__arrow {
   opacity: 1;
 }
 
-/*
- {
-   &.n_animation {
-      transition: color 0.3s, transform 0.6s ease 1s, opacity 0.6s ease 1s;
-      transform: translateX(30%);
-
-      &.n_play-animation {
-         transform: translateX(0);
-      }
-   }
-}
-*/
-
 .home-fs {
   margin-bottom: 12px;
 }
@@ -1610,7 +1597,7 @@ body._touch .header .menu__list > li._active .menu__arrow {
 }
 
 .categories__button {
-  background-color: #fff;
+  background: #fff;
   border: 1px solid #A06C05;
   border-radius: 6px;
   color: #595C59;
@@ -1624,12 +1611,12 @@ body._touch .header .menu__list > li._active .menu__arrow {
   min-width: 195px;
   padding: 8px 15px;
   position: relative;
-  transition: all 0.3s ease 0s;
+  transition: background-color 0.3s ease 0s, border-color 0.3s ease 0s, color 0.3s ease 0s;
   text-align: center;
 }
 
 .categories__button.n_animation {
-  transition-delay: 0.5s;
+  transition: background 0.3s ease 0s, border-color 0.3s ease 0s, color 0.3s ease 0s, transform 0.3s ease 0.5s, opacity 0.3s ease 0.5s;
   transform: translateY(25px);
 }
 
@@ -1722,7 +1709,7 @@ body._touch .header .menu__list > li._active .menu__arrow {
 }
 
 .guiding-principles__button {
-  background-color: rgb(251, 202, 116);
+  background: rgb(251, 202, 116);
   border: 1px solid transparent;
   border-radius: 24px;
   color: #325E5A;
@@ -1737,11 +1724,13 @@ body._touch .header .menu__list > li._active .menu__arrow {
 }
 
 .guiding-principles__button.n_animation {
-  transition-delay: 0.8s;
+  transition: background 0.3s ease 0s, border-color 0.3s ease 0s, color 0.3s ease 0s, transform 0.3s ease 0.8s, opacity 0.3s ease 0.8s;
+  opacity: 0;
   transform: translateY(25px);
 }
 
 .guiding-principles__button.n_animation.n_play-animation {
+  opacity: 1;
   transform: translateY(0);
 }
 
@@ -1805,7 +1794,7 @@ body._touch .header .menu__list > li._active .menu__arrow {
 }
 
 .purpose-project__button.n_animation {
-  transition-delay: 0.8s;
+  transition: background 0.3s ease 0s, border-color 0.3s ease 0s, color 0.3s ease 0s, transform 0.3s ease 0.8s, opacity 0.3s ease 0.8s;
   transform: translateY(25px);
 }
 
@@ -2236,13 +2225,13 @@ body._touch .header .menu__list > li._active .menu__arrow {
 }
 
 .purpose-project-two__blockIcon.n_animation {
-  transform: rotate(360deg) scale(0.6);
+  transform: scale(0.6);
   transition-duration: 3s;
   transition-delay: 1s;
 }
 
 .purpose-project-two__blockIcon.n_animation.n_play-animation {
-  transform: rotate(0) scale(1);
+  transform: scale(1);
 }
 
 .purpose-project-two__blockIcon img,

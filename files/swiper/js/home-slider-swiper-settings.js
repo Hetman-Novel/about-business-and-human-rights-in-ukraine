@@ -25,18 +25,18 @@ if (testimonials_slider) {
          disableOnInteraction: false,
       },
       // Отключить предзагрузка картинок
-      preloadImages: false,
+      //preloadImages: false,
 
       // Lazy Loading (подгрузка картинок)
-      lazy: {
+      /*lazy: {
          // Подгружать на старте переключения слайда
          loadOnTransitionStart: false,
 
          // Подгрузить предыдущую и следующую картинку
          loadPrewNext: false,
-      },
+      },*/
       // Слежка за видимыми слайдами
-      watchSlidesProgress: false,
+      //watchSlidesProgress: false,
 
       // Добавление класса видимым слайдам
       watchSlidesVisibility: true,

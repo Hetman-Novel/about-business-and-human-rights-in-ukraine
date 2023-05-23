@@ -1502,6 +1502,8 @@ body._touch .header .menu__list > li._active .menu__arrow {
 
 .home-fs-slider__slide {
   background-color: #0A1D3E;
+  max-height: 810px !important;
+  height: auto;
   position: relative;
 }
 

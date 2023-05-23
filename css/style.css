@@ -3054,6 +3054,118 @@ body._touch .header .menu__list > li._active .menu__arrow {
   top: 50%;
 }
 
+.additional-materials {
+  background-color: #FAFAFA;
+  overflow: hidden;
+  padding-bottom: 29px;
+  padding-top: 25px;
+}
+
+.additional-materials .n_container {
+  max-width: 1920px;
+}
+
+.additional-materials__wrap-items {
+  align-items: center;
+  display: flex;
+}
+
+.additional-materials__blockImage {
+  margin-bottom: 30px;
+  margin-right: 29px;
+  width: 40%;
+}
+
+.additional-materials__title {
+  color: rgb(89, 89, 89);
+  font-size: 43px;
+  line-height: 43px;
+  margin-left: -4px;
+}
+
+.additional-materials__items {
+  display: flex;
+  flex-wrap: wrap;
+  width: 60%;
+}
+
+.additional-materials__item {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  padding-left: 4px;
+  padding-right: 4px;
+  position: relative;
+  width: 25%;
+}
+
+.additional-materials__item:first-child {
+  margin-bottom: 29px;
+  width: 100%;
+}
+
+.additional-materials__item:first-child::before {
+  display: none;
+}
+
+.additional-materials__item::before {
+  background-color: #636363;
+  content: "";
+  height: 250px;
+  display: block;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 1px;
+}
+
+.additional-materials__item-blockImage {
+  height: 138px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -8px;
+  position: relative;
+  width: 138px;
+}
+
+.additional-materials__blockText {
+  margin-bottom: 19px;
+  margin-top: 9px;
+  padding-left: 8%;
+  padding-right: 8%;
+}
+
+.additional-materials__blockText h4,
+.additional-materials__blockText p {
+  color: rgb(50, 50, 50);
+  font-size: 16px;
+  line-height: 1.2em;
+}
+
+.additional-materials__btn-download {
+  background-color: #fff;
+  border-radius: 20px;
+  border: 2px solid #8B6755;
+  color: #8B6755;
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: auto;
+  padding: 8px 43px 8px 10px;
+  position: relative;
+}
+
+.additional-materials__btn-download svg {
+  color: #8B6755;
+  height: 20px;
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: 0.2s;
+  width: 20px;
+}
+
 .project-team {
   background-color: #EBEBEB;
   padding-bottom: 68px;
@@ -3568,6 +3680,19 @@ body._touch .header .menu__list > li._active .menu__arrow {
     margin-top: 5px;
   }
 
+  .additional-materials__blockImage {
+    width: 33%;
+  }
+
+  .additional-materials__title {
+    font-size: 32px;
+    line-height: 42px;
+  }
+
+  .additional-materials__items {
+    width: 67%;
+  }
+
   .project-team__title {
     font-size: 32px;
     line-height: 42px;
@@ -3594,9 +3719,59 @@ body._touch .header .menu__list > li._active .menu__arrow {
     line-height: 30px;
   }
 
+  .additional-materials__wrap-items {
+    flex-wrap: wrap;
+  }
+
+  .additional-materials__blockImage {
+    margin-left: auto;
+    margin-right: -40px;
+    width: 342px;
+  }
+
+  .additional-materials__title {
+    font-size: 28px;
+    line-height: 38px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .additional-materials__items {
+    width: 100%;
+  }
+
+  .additional-materials__item:last-child::after {
+    background-color: #636363;
+    content: "";
+    height: 250px;
+    display: block;
+    right: 0;
+    position: absolute;
+    top: 0;
+    width: 1px;
+  }
+
+  .additional-materials__btn-download {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .project-team__title {
     font-size: 28px;
     line-height: 38px;
+  }
+}
+
+@media screen and (max-width: 1200.98px) and (max-width: 760.98px) {
+  .additional-materials__item:last-child::after {
+    height: 82%;
+  }
+}
+
+@media screen and (max-width: 1200.98px) and (max-width: 460.98px) {
+  .additional-materials__item:last-child::after {
+    display: none;
   }
 }
 
@@ -3992,6 +4167,10 @@ body._touch .header .menu__list > li._active .menu__arrow {
     right: 30px;
   }
 
+  .additional-materials__blockImage {
+    margin-right: -30px;
+  }
+
   .project-team__wrap-slider {
     padding-left: 20px;
     padding-right: 20px;
@@ -4115,6 +4294,45 @@ body._touch .header .menu__list > li._active .menu__arrow {
 
   .project-team__btn-next:after {
     font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 760.98px) {
+  .additional-materials__item {
+    margin-bottom: 40px;
+    width: 50%;
+  }
+
+  .additional-materials__item:nth-child(3)::after {
+    background-color: #636363;
+    content: "";
+    height: 82%;
+    display: block;
+    right: 0;
+    position: absolute;
+    top: 0;
+    width: 1px;
+  }
+
+  .additional-materials__item::before {
+    height: 82%;
+  }
+
+  .additional-materials__item-blockImage {
+    height: 180px;
+    margin-top: 0;
+    width: 180px;
+  }
+
+  .additional-materials__blockText {
+    margin-bottom: 25px;
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 760.98px) and (max-width: 460.98px) {
+  .additional-materials__item:nth-child(3) {
+    display: none;
   }
 }
 
@@ -4267,6 +4485,16 @@ body._touch .header .menu__list > li._active .menu__arrow {
 
   .posts__title {
     margin-bottom: 35px;
+  }
+
+  .additional-materials__blockImage {
+    margin-right: -20px;
+    width: 280px;
+  }
+
+  .additional-materials__title {
+    font-size: 28px;
+    line-height: 34px;
   }
 
   .project-team__title {
@@ -4501,7 +4729,7 @@ body._touch .header .menu__list > li._active .menu__arrow {
 @media screen and (max-width: 500.98px) {
   .lists__blockDescription {
     min-height: auto;
-    margin-top: -60px;
+    margin-top: -50px;
     padding-bottom: 35px;
     padding-top: 150px;
   }
@@ -4526,6 +4754,21 @@ body._touch .header .menu__list > li._active .menu__arrow {
     max-width: 100%;
     padding-left: 42px;
     padding-right: 42px;
+  }
+
+  .additional-materials__item {
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+  }
+
+  .additional-materials__item::before {
+    display: none;
+  }
+
+  .additional-materials__blockText {
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
@@ -4598,6 +4841,10 @@ body._touch .header .menu__list > li._active .menu__arrow {
 
   .posts__permalink:hover {
     color: #000;
+  }
+
+  .additional-materials__btn-download:hover svg {
+    transform: scale(1.3) translateY(-40%);
   }
 
   .footer__socialListItem:hover {

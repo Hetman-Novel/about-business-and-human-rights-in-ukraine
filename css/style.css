@@ -484,10 +484,19 @@ body {
 
 main.main {
   flex: 1;
-}
+  /*&.page {
+  	margin-top: 193px;
 
-main.main.page {
-  margin-top: 193px;
+  	@include media-max-1024 {
+  		margin-top: 156px;
+  	}
+  	@include media-max-720 {
+  		margin-top: 141px;
+  	}
+  	@include media-max-640 {
+  		margin-top: 116px;
+  	}
+  }*/
 }
 
 body {
@@ -1143,8 +1152,24 @@ h6 {
 
 /* n Classes */
 
-main.main.front-page {
-  padding-top: 193px;
+main.main {
+  padding-top: 170px;
+  /*&.front-page {
+     padding-top: 170px;
+
+     @include media-max-1024 {
+        padding-top: 156px;
+     }
+     @include media-max-800 {
+        padding-top: 135px;
+     }
+     @include media-max-720 {
+        padding-top: 140px;
+     }
+     @include media-max-640 {
+        padding-top: 115px;
+     }
+  }*/
 }
 
 /*.hidden-link {
@@ -1197,11 +1222,11 @@ a {
 .header__top {
   align-items: center;
   display: flex;
-  height: 140px;
-  padding-bottom: 10px;
+  height: 122px;
+  padding-bottom: 15px;
   padding-left: 40px;
   padding-right: 40px;
-  padding-top: 10px;
+  padding-top: 15px;
 }
 
 .header__linkLogo {
@@ -1330,7 +1355,7 @@ a {
 .header__wrapLogo {
   align-items: center;
   display: flex;
-  height: 115px;
+  height: 90px;
   min-width: 55px;
   width: auto;
 }
@@ -1339,12 +1364,19 @@ a {
   margin-right: 24px;
 }
 
+.header__wrapLogo.business-and-human-rights img,
+.header__wrapLogo.business-and-human-rights picture,
+.header__wrapLogo.business-and-human-rights svg {
+  height: 87%;
+}
+
 .header__wrapLogo img,
 .header__wrapLogo picture,
 .header__wrapLogo svg {
   height: 100%;
   max-height: 100%;
   max-width: 100%;
+  width: auto;
 }
 
 .header__burger {
@@ -2369,7 +2401,7 @@ body._touch .header .menu__list > li._active .menu__arrow {
 .footer__wrap-logo {
   align-items: center;
   display: flex;
-  height: 125px;
+  height: 90px;
   min-width: 50px;
   width: auto;
 }
@@ -2378,10 +2410,19 @@ body._touch .header .menu__list > li._active .menu__arrow {
   margin-right: 24px;
 }
 
+.footer__wrap-logo.business-and-human-rights img,
+.footer__wrap-logo.business-and-human-rights picture,
+.footer__wrap-logo.business-and-human-rights svg {
+  height: 87%;
+}
+
 .footer__wrap-logo img,
+.footer__wrap-logo picture,
 .footer__wrap-logo svg {
+  height: 100%;
   max-height: 100%;
   max-width: 100%;
+  width: auto;
 }
 
 .footer__contact {
@@ -2600,7 +2641,7 @@ body._touch .header .menu__list > li._active .menu__arrow {
 
 @media screen and (min-width: 1101px) {
   .header.n_scroll .header__wrapper {
-    top: -128px;
+    top: -110px;
   }
 
   .header-container {
@@ -2770,6 +2811,11 @@ body._touch .header .menu__list > li._active .menu__arrow {
     font-size: 28px;
     line-height: 38px;
   }
+
+  .footer__wrap-logo {
+    height: 80px;
+    min-width: 35px;
+  }
 }
 
 @media screen and (max-width: 1200.98px) and (max-width: 760.98px) {
@@ -2786,7 +2832,7 @@ body._touch .header .menu__list > li._active .menu__arrow {
 
 @media screen and (max-width: 1100.98px) {
   .header.n_scroll .header__wrapper {
-    top: -135px;
+    top: -117px;
   }
 
   .home-fs-slider__slide {
@@ -2833,6 +2879,12 @@ body._touch .header .menu__list > li._active .menu__arrow {
 
   .home-fs-slider__sw-btn-next {
     right: 12px;
+  }
+}
+
+@media (max-width: 1100.98px) {
+  .header .header-container {
+    max-width: 100%;
   }
 }
 
@@ -3140,11 +3192,7 @@ body._touch .header .menu__list > li._active .menu__arrow {
     padding-right: 30px;
   }
 
-  main.main.page {
-    margin-top: 156px;
-  }
-
-  main.main.front-page {
+  main.main {
     padding-top: 156px;
   }
 
@@ -3156,10 +3204,6 @@ body._touch .header .menu__list > li._active .menu__arrow {
     height: 110px;
     padding-left: 30px;
     padding-right: 30px;
-  }
-
-  .header__top {
-    height: 110px;
   }
 
   .header__site-name {
@@ -3230,6 +3274,10 @@ body._touch .header .menu__list > li._active .menu__arrow {
     font-size: 24px;
     line-height: 28px;
   }
+
+  .footer__wrap-logo {
+    height: 72px;
+  }
 }
 
 @media screen and (max-width: 991.98px) {
@@ -3275,6 +3323,18 @@ body._touch .header .menu__list > li._active .menu__arrow {
 }
 
 @media screen and (max-width: 800.98px) {
+  main.main {
+    padding-top: 135px;
+  }
+
+  .header.n_scroll .header__wrapper {
+    top: -90px;
+  }
+
+  .header__top {
+    height: 95px;
+  }
+
   .header__wrapLinkLogo {
     height: 50px;
     flex: 0 0 50px;
@@ -3422,21 +3482,12 @@ body._touch .header .menu__list > li._active .menu__arrow {
     padding-right: 20px;
   }
 
-  main.main.page {
-    margin-top: 141px;
-  }
-
-  main.main.front-page {
+  main.main {
     padding-top: 140px;
-  }
-
-  .header.n_scroll .header__wrapper {
-    top: -90px;
   }
 
   .header__top {
     box-sizing: border-box;
-    height: 95px;
     padding-left: 20px;
     padding-right: 20px;
     width: 100%;
@@ -3635,11 +3686,7 @@ body._touch .header .menu__list > li._active .menu__arrow {
 }
 
 @media screen and (max-width: 640.98px) {
-  main.main.page {
-    margin-top: 116px;
-  }
-
-  main.main.front-page {
+  main.main {
     padding-top: 115px;
   }
 
@@ -3721,6 +3768,10 @@ body._touch .header .menu__list > li._active .menu__arrow {
   .footer__socialListItem.youtube svg {
     height: 22px;
     width: 22px;
+  }
+
+  .footer__wrap-logo {
+    min-width: 30px;
   }
 }
 

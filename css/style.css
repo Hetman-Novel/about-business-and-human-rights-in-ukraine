@@ -1866,6 +1866,14 @@ body._touch .header .menu__list > li._active .menu__arrow {
   padding-top: 51px;
 }
 
+.posts__itemsAboveTitle {
+  font-size: 28px;
+  line-height: 1.2em;
+  margin-bottom: -4px;
+  margin-top: 45px;
+  text-align: center;
+}
+
 .posts__item {
   border: 1px solid #757575;
   display: flex;
@@ -1888,7 +1896,7 @@ body._touch .header .menu__list > li._active .menu__arrow {
   color: #323232;
   font-size: 24px;
   line-height: 29px;
-  margin-bottom: 69px;
+  margin-bottom: 20px;
 }
 
 .posts__title.n_animation {
@@ -2156,7 +2164,7 @@ body._touch .header .menu__list > li._active .menu__arrow {
 }
 
 .page__head-item-content {
-  max-width: 285px;
+  max-width: 340px;
 }
 
 .page__head-blockImage {
@@ -3617,10 +3625,6 @@ body._touch .header .menu__list > li._active .menu__arrow {
     top: 3px;
   }
 
-  .posts__title {
-    margin-bottom: 35px;
-  }
-
   .additional-materials__blockImage {
     margin-right: -20px;
     width: 280px;
@@ -3865,10 +3869,13 @@ body._touch .header .menu__list > li._active .menu__arrow {
     top: 4px;
   }
 
+  .posts__itemsAboveTitle {
+    font-size: 24px;
+  }
+
   .posts__title {
     font-size: 18px;
     line-height: 24px;
-    margin-bottom: 20px;
   }
 
   .posts__blockText p {

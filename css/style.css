@@ -2164,7 +2164,7 @@ body._touch .header .menu__list > li._active .menu__arrow {
 }
 
 .page__head-item-content {
-  max-width: 340px;
+  max-width: 360px;
 }
 
 .page__head-blockImage {
@@ -2177,18 +2177,18 @@ body._touch .header .menu__list > li._active .menu__arrow {
 
 .page__head-title {
   color: #FAFAFA;
-  font-size: 56px;
-  line-height: 1.1em;
+  font-size: 48px;
+  line-height: 1.21em;
   margin: 0;
   text-transform: uppercase;
 }
 
 .page__head-title.n_animation {
-  transform: translateX(35px);
+  transform: translateY(35px);
 }
 
 .page__head-title.n_animation.n_play-animation {
-  transform: translateX(0);
+  transform: translateY(0);
 }
 
 .page__head-blockText {
@@ -2211,8 +2211,13 @@ body._touch .header .menu__list > li._active .menu__arrow {
 
 .page__wrap-blockInfo {
   background-color: #EBEBEB;
+  counter-reset: info-block-number;
   padding-bottom: 43px;
   padding-top: 43px;
+}
+
+.page__wrap-blockInfo.no-number .page__blockInfo-aboveTitle::after {
+  display: none;
 }
 
 .page__blockInfo {
@@ -2225,6 +2230,19 @@ body._touch .header .menu__list > li._active .menu__arrow {
 
 .page__blockInfo-wrap-image {
   width: 20%;
+}
+
+.page__blockInfo-aboveTitle {
+  color: #EB650B;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0 0 8px !important;
+}
+
+.page__blockInfo-aboveTitle::after {
+  counter-increment: info-block-number;
+  content: counter(info-block-number);
+  margin-left: 4px;
 }
 
 .page__blockInfo-content {
@@ -2260,6 +2278,11 @@ body._touch .header .menu__list > li._active .menu__arrow {
   display: block;
   height: 80px;
   width: 80px;
+}
+
+.page__blockImage img.no_object-fit {
+  max-height: 96%;
+  max-width: 96%;
 }
 
 .page .posts__items {
@@ -3261,17 +3284,9 @@ body._touch .header .menu__list > li._active .menu__arrow {
     width: calc(100% - 310px);
   }
 
-  .page__head-item-content {
-    max-width: 360px;
-  }
-
   .page__head-blockImage {
     height: 260px;
     width: 260px;
-  }
-
-  .page__head-title {
-    font-size: 48px;
   }
 
   .page__head-blockText {
@@ -3657,6 +3672,10 @@ body._touch .header .menu__list > li._active .menu__arrow {
     width: 100%;
   }
 
+  .page__blockInfo-aboveTitle {
+    font-size: 16px;
+  }
+
   .page__blockInfo-content {
     width: calc(100% - 87px);
   }
@@ -3914,6 +3933,10 @@ body._touch .header .menu__list > li._active .menu__arrow {
 
   .page__blockInfo:not(:last-child) {
     margin-bottom: 50px;
+  }
+
+  .page__blockInfo-aboveTitle {
+    font-size: 15px;
   }
 
   .page__blockInfo-content h2 {

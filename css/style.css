@@ -643,6 +643,63 @@ h6 {
   font-weight: 700;
 }
 
+.similar-articles {
+  background-color: #EFEFEF;
+  padding-bottom: 35px;
+  padding-top: 20px;
+}
+
+.similar-articles__title {
+  color: #323232;
+  font-size: 24px;
+  line-height: 1.4em;
+}
+
+.similar-articles__list {
+  list-style: none;
+  margin-top: 18px;
+}
+
+.similar-articles__listItem {
+  background-color: #EBEBEB;
+  border-bottom-left-radius: 8px;
+  border-top-left-radius: 8px;
+  color: #59595E;
+  display: flex;
+  padding: 3px 15px 3px 3px;
+}
+
+.similar-articles__listItem:not(:last-child) {
+  margin-bottom: 3px;
+}
+
+.similar-articles__listItem a {
+  color: inherit;
+  display: table;
+  font-size: 16px;
+  line-height: 1.6em;
+  font-weight: 600;
+  margin-left: 39px;
+  padding-top: 6px;
+}
+
+.similar-articles__listItem-wrap-svg {
+  align-items: center;
+  background-color: #fff;
+  border: 0 solid rgb(255, 252, 204);
+  border-radius: 7px;
+  height: 39px;
+  display: flex;
+  justify-content: center;
+  flex: 0 0 39px;
+  width: 39px;
+}
+
+.similar-articles__listItem-wrap-svg svg {
+  height: 14px;
+  transition: 0.3s;
+}
+
 /*.page__title {
 	@include adaptive-value("font-size", 70, 28, 1);
 	font-weight: 400;
@@ -2171,8 +2228,13 @@ body._touch .header .menu__list > li._active .menu__arrow {
   border: 1px solid #43638F;
   border-radius: 50%;
   height: 334px;
+  position: relative;
   overflow: hidden;
   width: 334px;
+}
+
+.page__head-blockImage img {
+  height: 100%;
 }
 
 .page__head-title {
@@ -2288,6 +2350,84 @@ body._touch .header .menu__list > li._active .menu__arrow {
 .page .posts__items {
   margin-bottom: 117px;
   margin-top: 34px;
+}
+
+/*
+@media screen and (max-width: 767.98px) {
+    .elementor-2965 .elementor-element.elementor-element-a215417.e-con {
+        order: 1;
+        width: 100%;
+    }
+}
+*/
+
+/* Page - Single */
+
+.single-page__head {
+  background-color: #E57F1C;
+  height: 348px;
+  overflow: hidden;
+  padding-left: 70px;
+}
+
+.single-page__head .n_container {
+  height: 100%;
+  padding-right: 0;
+  max-width: 2000px;
+}
+
+.single-page__head-item {
+  height: 100%;
+  width: 50%;
+}
+
+.single-page__head-item-content {
+  padding: 25px 20px 25px 0;
+}
+
+.single-page__head-category {
+  color: #FBCA74;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0 0 15px !important;
+}
+
+.single-page__head-title {
+  color: #fff !important;
+  font-size: 25px;
+  line-height: 1.26em;
+  max-width: 350px;
+  margin: 0;
+  text-transform: none;
+}
+
+.single-page__headBlockImage {
+  height: auto;
+}
+
+.single-page__headBlockImage.max-width-image {
+  max-width: 480px;
+  margin-right: 28px;
+}
+
+.single-page__headBlockImage img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.single-page .page__content {
+  padding-bottom: 34px;
+  padding-top: 44px;
+}
+
+.single-page .page__content p {
+  color: #7E5E5E;
+  font-size: 16px;
+  line-height: 1.45em;
+}
+
+.single-page .page__content p:not(:last-child) {
+  margin-bottom: 22px;
 }
 
 /* Footer */
@@ -2475,6 +2615,18 @@ body._touch .header .menu__list > li._active .menu__arrow {
 /* Plyr video player */
 
 @media screen and (min-width: 576px) {
+  .single-page__head-items {
+    align-items: flex-start;
+    height: 100%;
+    display: flex;
+  }
+
+  .single-page__head-item:nth-child(2) {
+    align-items: flex-end;
+    display: flex;
+    justify-content: flex-end;
+  }
+
   .footer__items {
     display: flex;
     flex-wrap: wrap;
@@ -3223,6 +3375,10 @@ body._touch .header .menu__list > li._active .menu__arrow {
     padding-right: 30px;
   }
 
+  .similar-articles__listItem a {
+    margin-left: 28px;
+  }
+
   main.main {
     padding-top: 156px;
   }
@@ -3291,6 +3447,24 @@ body._touch .header .menu__list > li._active .menu__arrow {
 
   .page__head-blockText {
     margin-top: 25px;
+  }
+
+  .single-page__head {
+    height: 280px;
+  }
+
+  .single-page__head-item:nth-child(1) {
+    width: 40%;
+  }
+
+  .single-page__head-item:nth-child(2) {
+    max-height: 280px;
+    width: 60%;
+  }
+
+  .single-page__headBlockImage.max-width-image {
+    max-height: 280px;
+    max-width: 402px;
   }
 
   .footer__site-name {
@@ -3456,6 +3630,10 @@ body._touch .header .menu__list > li._active .menu__arrow {
 
   .project-team__btn-next:after {
     font-size: 30px;
+  }
+
+  .single-page__head {
+    padding-left: 0;
   }
 }
 
@@ -3813,6 +3991,30 @@ body._touch .header .menu__list > li._active .menu__arrow {
 }
 
 @media screen and (max-width: 575.98px) {
+  .similar-articles {
+    padding-bottom: 20px;
+  }
+
+  .similar-articles__title {
+    font-size: 20px;
+  }
+
+  .similar-articles__listItem a {
+    font-size: 14px;
+    margin-left: 20px;
+    padding-top: 2px;
+  }
+
+  .similar-articles__listItem-wrap-svg {
+    height: 28px;
+    flex: 0 0 28px;
+    width: 28px;
+  }
+
+  .similar-articles__listItem-wrap-svg svg {
+    height: 12px;
+  }
+
   .header__linkLogo {
     min-width: 120px;
   }
@@ -3955,6 +4157,52 @@ body._touch .header .menu__list > li._active .menu__arrow {
     margin-bottom: 30px;
   }
 
+  .single-page__head {
+    height: auto;
+  }
+
+  .single-page__head .n_container {
+    padding-left: 0;
+  }
+
+  .single-page__head-item:nth-child(1) {
+    width: 100%;
+  }
+
+  .single-page__head-item:nth-child(2) {
+    max-height: 100%;
+    width: 100%;
+  }
+
+  .single-page__head-item-content {
+    padding: 25px 20px;
+  }
+
+  .single-page__head-category {
+    font-size: 16px;
+    margin: 0 0 8px !important;
+  }
+
+  .single-page__head-title {
+    font-size: 21px;
+  }
+
+  .single-page__headBlockImage.max-width-image {
+    max-height: 100%;
+    margin-right: 0;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .single-page .page__content {
+    padding-bottom: 25px;
+    padding-top: 25px;
+  }
+
+  .single-page .page__content p {
+    font-size: 14px;
+  }
+
   .footer__item:nth-child(2) {
     border-bottom: 1px solid #656565;
     border-top: 1px solid #656565;
@@ -4066,6 +4314,10 @@ body._touch .header .menu__list > li._active .menu__arrow {
 }
 
 @media (any-hover: hover) {
+  .similar-articles__listItem:hover svg {
+    transform: scale(1.5);
+  }
+
   .header__linkLogo:hover img,
   .header__linkLogo:hover svg {
     transform: scale(1.2);

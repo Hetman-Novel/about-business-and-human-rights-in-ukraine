@@ -7,7 +7,15 @@
 /* Fonts */
 
 @font-face {
-  font-family: "Montserrat";
+  font-family: Gilroy;
+  font-display: swap;
+  src: url("../fonts/Gilroy-Regular.woff2") format("woff2"), url("../fonts/Gilroy-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Montserrat;
   font-display: swap;
   src: url("../fonts/Montserrat-Bold.woff2") format("woff2"), url("../fonts/Montserrat-Bold.woff") format("woff");
   font-weight: 700;
@@ -15,7 +23,7 @@
 }
 
 @font-face {
-  font-family: "Open Sans";
+  font-family: OpenSans;
   font-display: swap;
   src: url("../fonts/OpenSans-Bold.woff2") format("woff2"), url("../fonts/OpenSans-Bold.woff") format("woff");
   font-weight: 700;
@@ -23,7 +31,7 @@
 }
 
 @font-face {
-  font-family: "Open Sans";
+  font-family: OpenSans;
   font-display: swap;
   src: url("../fonts/OpenSans-Medium.woff2") format("woff2"), url("../fonts/OpenSans-Medium.woff") format("woff");
   font-weight: 500;
@@ -31,7 +39,7 @@
 }
 
 @font-face {
-  font-family: "Open Sans";
+  font-family: OpenSans;
   font-display: swap;
   src: url("../fonts/OpenSans-Regular.woff2") format("woff2"), url("../fonts/OpenSans-Regular.woff") format("woff");
   font-weight: 400;
@@ -39,7 +47,7 @@
 }
 
 @font-face {
-  font-family: "Open Sans";
+  font-family: OpenSans;
   font-display: swap;
   src: url("../fonts/OpenSans-SemiBold.woff2") format("woff2"), url("../fonts/OpenSans-SemiBold.woff") format("woff");
   font-weight: 600;
@@ -1308,6 +1316,7 @@ a {
 
 .header__site-name {
   color: #102080;
+  font-family: Gilroy, sans-serif;
   font-size: 28px;
   line-height: 32px;
   letter-spacing: 0.001em;
@@ -2719,6 +2728,7 @@ body._touch .header .menu__list > li._active .menu__arrow {
 
 .footer__site-name {
   color: #102080;
+  font-family: Gilroy, sans-serif;
   font-size: 28px;
   line-height: 32px;
   letter-spacing: 0.001em;
@@ -3673,6 +3683,7 @@ body._touch .header .menu__list > li._active .menu__arrow {
   .header__site-name {
     font-size: 24px;
     line-height: 28px;
+    max-width: 160px;
   }
 
   .header__wrapLogo {
@@ -3802,7 +3813,7 @@ body._touch .header .menu__list > li._active .menu__arrow {
   }
 
   .footer__site-name {
-    max-width: 160px;
+    max-width: 158px;
   }
 
   .footer__wrapLogos {
@@ -3897,7 +3908,7 @@ body._touch .header .menu__list > li._active .menu__arrow {
   .footer__site-name {
     font-size: 21px;
     line-height: 24px;
-    max-width: 140px;
+    max-width: 138px;
   }
 
   .footer__socialListItem:not(:last-child) {
@@ -4258,7 +4269,7 @@ body._touch .header .menu__list > li._active .menu__arrow {
   .footer__site-name {
     font-size: 16px;
     line-height: 18px;
-    max-width: 110px;
+    max-width: 105px;
     margin-left: 12px;
   }
 
